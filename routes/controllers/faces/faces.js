@@ -12,7 +12,7 @@ const populateGeoJsonFields = [
 const populateJsonFields = [
     {
         path: "rings",
-        select: "_id x y z",
+        select: "",
     }
 ]
 

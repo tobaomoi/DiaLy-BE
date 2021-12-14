@@ -5,7 +5,7 @@ const FaceJson = require("../../../models/json/faceJson");
 const populateBodyJsonFields = [
     {
         path: "data",
-        select: "_id type rings symbol",
+        select: " type rings symbol",
         populate:[
             {
                 path: "rings",
