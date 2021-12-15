@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
     CORS({
-        origin: "https://data-dia-ly.herokuapp.com/",
+        origin: '*',
         optionsSuccessStatus:200,
         credentials:true,
     })
