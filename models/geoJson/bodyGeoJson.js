@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const BodyGeoJsonSchema = mongoose.Schema({
     nameBody: {type:String, required: true},
     geoData: {
-        bodyType: { type: String, default: "FeatureCollection" },
+        type: { type: String, default: "FeatureCollection" },
         features: {
             type: [{
                 type: mongoose.Schema.Types.ObjectId,
@@ -13,15 +13,7 @@ const BodyGeoJsonSchema = mongoose.Schema({
         },
         properties: {
             height: { type: Number, required: true },
-            symbolLayers: [
-                {
-                    type: { type: String, required: true },
-                    size: { type: Number, required: true },
-                    material: {
-                        color: { type: [], required: true }
-                    }
-                }
-            ]
+            color: {type: String, required: true}
         }
     }
 
