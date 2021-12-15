@@ -2,6 +2,7 @@ const FaceGeoJson = require("../../../models/geoJson/faceGeoJson");
 const FaceJson = require("../../../models/json/faceJson");
 const BodyJson = require("../../../models/json/bodyJson");
 const BodyGeoJson = require ("../../../models/geoJson/bodyGeoJson");
+
 const populateGeoJsonFields = [
     {
         path: "type",

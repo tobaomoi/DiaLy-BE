@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
     CORS({
-        origin: ["http://localhost:3000","https://data-dia-ly.herokuapp.com/"],
+        origin: "https://data-dia-ly.herokuapp.com/",
         optionsSuccessStatus:200,
         credentials:true,
     })
