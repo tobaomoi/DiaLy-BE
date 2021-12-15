@@ -50,7 +50,7 @@ module.exports.addNewBodyJson = async (req, res, next) => {
 }
 
 module.exports.addNewBodyGeoJson = async (req, res, next) => {
-    const { nameBody, geoData,properties,height,symbolLayers  } = req.body;
+    const { nameBody, geoData,properties,height,color } = req.body;
     try {
         const foundedBody = await BodyGeoJson.findOne({
             nameBody
@@ -63,7 +63,7 @@ module.exports.addNewBodyGeoJson = async (req, res, next) => {
                 geoData,
                 properties,
                 height,
-                symbolLayers
+                color
             })
             newBodyGeoJson.save();
             return res.status(200).json({ message: "Them body thanh cong !" });
